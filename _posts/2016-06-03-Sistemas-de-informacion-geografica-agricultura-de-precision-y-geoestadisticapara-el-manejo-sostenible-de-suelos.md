@@ -1,0 +1,6 @@
+Ensayo geoestadística presentado durante la profundización en suelos del programa de Ingeniería agronómica ,en la Universidad de Caldas.
+
+Desde el principio de los tiempos agrícolas , el ser humano ha reconocido que , en algunas áreas de sus cultivos, las plantas se enfermaban más que otras, que había sectores que producían cosechas abundantes y otros cosechas pobres, y en ese orden de ideas los encargados de los cultivos dirigían cuidados especiales a cada zona, habilidad que se lograba solo con muchos años de experiencia y trabajo en cada lote,pero sin contar con datos reales de hasta donde realmente llegaban las zonas productivas, hasta donde llegaban los límites de las zonas de alta influencia y ataque de plagas y enfermedades. Pues bien, como no es posible que en el mundo actual los encargados de hacerle ingeniería a los cultivos, se dediquen muchos años a conocer y labrar cada lote de las zonas de cultivo,para llegar a ese nivel de conocimiento especializado por lotes, por medio de la Tecnología unida al conocimiento y la ciencia, fue creada la agricultura de manejo por sitio específico,que se apoya de análisis estadísticos espaciales y que se enmarca dentro de un tipo de agricultura llamada “de precisión”....
+
+continua 25 paginas mas en el link:  http://www.goo.gl/mX59EE
+
