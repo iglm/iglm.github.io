@@ -5,6 +5,6 @@ permalink: /about/
 ---
 
 
-### Contactame
+### Contacto
 
 [mateotabares7@gmail.com](mailto:mateotabares7@gmail.com)
