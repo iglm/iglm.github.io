@@ -19,16 +19,6 @@ https://www.uv.es/ayala/docencia/tami/
  https://www.uv.es/ayala/docencia/tami/tami13.pdf
  
  
-Información sobre la maestría ofrecida por la Universidad de Caldas:
-
-http://www.maebbc.co/
-
-
-http://www.maebbc.co/?p=1930
-
-Plan de estudios de la maestría ofrecida por la Universidad de Caldas:
-http://www.maebbc.co/?p=1930
-
 
  R & Bioconductor Manual.
  
