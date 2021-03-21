@@ -8,6 +8,3 @@ hay nutridas secciones de enseñanza,venta de libros,acceso a la página, y sin 
  
 http://www.apsnet.org/Pages/default.aspx
 
-canal de youtube:
-
-http://www.goo.gl/dVwrkw
