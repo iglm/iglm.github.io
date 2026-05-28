@@ -1,4 +1,238 @@
 ---
-layout: home
-# Index page
+layout: default
+title: IGLM — Software y Asesoría Agrícola
+description: Apps móviles profesionales para transformar la gestión del campo colombiano. Monitoreo de plagas, planificación de labores y gestión de cosechas.
 ---
+
+{% include lang.html %}
+
+<style>
+  .hero-iglm {
+    background: linear-gradient(135deg, #166534 0%, #15803d 50%, #14532d 100%);
+    color: white; padding: 3rem 2rem; border-radius: 16px;
+    margin-bottom: 2rem; text-align: center;
+  }
+  .hero-iglm h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+  .hero-iglm h1 span { color: #86efac; }
+  .hero-iglm p { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+  .hero-iglm .team-badges {
+    display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;
+  }
+  .hero-iglm .badge-item {
+    background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.15); border-radius: 12px;
+    padding: 0.8rem 1.2rem; text-align: center; min-width: 180px;
+  }
+  .hero-iglm .badge-item .name { font-weight: 700; font-size: 0.95rem; }
+  .hero-iglm .badge-item .role { font-size: 0.75rem; opacity: 0.8; }
+  .hero-iglm .badge-item .uni { font-size: 0.7rem; opacity: 0.6; }
+
+  .section-title { font-size: 1.6rem; color: #166534; margin-bottom: 1.5rem; text-align: center; }
+
+  .stats-iglm { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+  .stat-item { text-align: center; padding: 1.2rem; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); }
+  .stat-item .number { font-size: 1.8rem; font-weight: 800; color: #166534; }
+  .stat-item .label { font-size: 0.8rem; color: var(--text-muted-color); margin-top: 0.2rem; }
+
+  .apps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; margin-bottom: 2.5rem; }
+  .app-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+  .app-card:hover { transform: translateY(-3px); box-shadow: 0 10px 20px -5px rgba(0,0,0,0.1); }
+  .app-card .card-body { padding: 1.3rem; }
+  .app-card .emoji { font-size: 2rem; display: block; margin-bottom: 0.4rem; }
+  .app-card h3 { font-size: 1.15rem; margin-bottom: 0.2rem; }
+  .app-card .tag { display: inline-block; background: #dcfce7; color: #166534; font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px; font-weight: 600; margin-bottom: 0.6rem; }
+  .app-card p { color: var(--text-muted-color); font-size: 0.9rem; margin-bottom: 0.8rem; }
+  .app-card .features { list-style: none; padding: 0; margin-bottom: 0.8rem; }
+  .app-card .features li { font-size: 0.83rem; color: var(--text-muted-color); padding: 0.2rem 0; padding-left: 1.3rem; position: relative; }
+  .app-card .features li::before { content: "✅"; position: absolute; left: 0; font-size: 0.75rem; }
+  .app-card .card-footer { padding: 0.8rem 1.3rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+  .app-card .card-footer a { color: #166534; text-decoration: none; font-weight: 600; font-size: 0.85rem; }
+  .app-card .card-footer a:hover { text-decoration: underline; }
+
+  .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+  .team-card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.5rem; text-align: center; }
+  .team-card .avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #166534, #22c55e); display: flex; align-items: center; justify-content: center; margin: 0 auto 0.8rem; font-size: 1.6rem; color: white; }
+  .team-card h4 { font-size: 1.1rem; }
+  .team-card .role { color: #166534; font-weight: 600; font-size: 0.85rem; }
+  .team-card .uni { color: var(--text-muted-color); font-size: 0.8rem; margin: 0.2rem 0; }
+  .team-card p.desc { color: var(--text-muted-color); font-size: 0.85rem; margin-top: 0.6rem; }
+  .team-card .social { margin-top: 0.8rem; }
+  .team-card .social a { color: var(--text-muted-color); font-size: 0.8rem; margin: 0 0.4rem; }
+  .team-card .social a:hover { color: #166534; }
+
+  .asesorias-iglm {
+    background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%);
+    border: 2px solid #eab308; border-radius: 16px;
+    padding: 2rem; margin-bottom: 2.5rem; text-align: center;
+  }
+  .asesorias-iglm h2 { color: #854d0e; font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .asesorias-iglm .icon { font-size: 2.5rem; display: block; margin-bottom: 0.4rem; }
+  .asesorias-iglm p { color: #713f12; max-width: 550px; margin: 0 auto 1rem; font-size: 0.9rem; }
+  .asesorias-iglm .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.8rem; text-align: left; margin: 1rem 0; }
+  .asesorias-iglm .service-item { background: white; border-radius: 10px; padding: 0.8rem; border-left: 4px solid #eab308; }
+  .asesorias-iglm .service-item h4 { color: #854d0e; font-size: 0.9rem; margin-bottom: 0.2rem; }
+  .asesorias-iglm .service-item p { font-size: 0.8rem; color: #713f12; margin: 0; }
+  .asesorias-iglm .btn-asesoria { display: inline-block; background: #854d0e; color: white; padding: 0.7rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 700; }
+  .asesorias-iglm .btn-asesoria:hover { background: #a16207; }
+
+  .contact-iglm { text-align: center; padding: 1.5rem; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 14px; margin-bottom: 1rem; }
+  .contact-iglm h2 { color: #166534; font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .contact-iglm p { font-size: 0.9rem; color: var(--text-muted-color); margin-bottom: 1rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+  .contact-iglm .btn-group { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+  .contact-iglm .btn { display: inline-block; background: #166534; color: white; padding: 0.7rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; }
+  .contact-iglm .btn:hover { background: #15803d; }
+  .contact-iglm .btn-outline { background: transparent; border: 2px solid #166534; color: #166534; }
+  .contact-iglm .btn-outline:hover { background: #166534; color: white; }
+  .contact-iglm .links { margin-top: 1rem; display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+  .contact-iglm .links a { color: var(--text-muted-color); font-size: 0.85rem; text-decoration: none; }
+  .contact-iglm .links a:hover { color: #166534; }
+
+  @media (max-width: 768px) {
+    .hero-iglm h1 { font-size: 1.6rem; }
+    .hero-iglm { padding: 2rem 1rem; }
+    .apps-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="hero-iglm">
+  <h1>🌱 <span>IGLM</span> — Software Agrícola</h1>
+  <p>Apps móviles profesionales para transformar la gestión del campo colombiano</p>
+  <div class="team-badges">
+    <div class="badge-item">
+      <div class="name">👨‍💻 Lucas Mateo Tabares Franco</div>
+      <div class="role">Ing. Agrónomo · Desarrollador</div>
+      <div class="uni">Universidad de Caldas</div>
+    </div>
+    <div class="badge-item">
+      <div class="name">👨‍🌾 Alfredo García Llano</div>
+      <div class="role">Admon. Empresas Agropecuarias</div>
+      <div class="uni">Universidad de Caldas</div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-iglm">
+  <div class="stat-item"><div class="number">3</div><div class="label">Apps Desarrolladas</div></div>
+  <div class="stat-item"><div class="number">100%</div><div class="label">Offline-First</div></div>
+  <div class="stat-item"><div class="number">🇨🇴</div><div class="label">Hecho en Colombia</div></div>
+  <div class="stat-item"><div class="number">🤝</div><div class="label">Asesorías Incluidas</div></div>
+</div>
+
+<h2 class="section-title">📱 Nuestras Apps</h2>
+
+<div class="apps-grid">
+
+  <!-- Programador Labores -->
+  <div class="app-card">
+    <div class="card-body">
+      <span class="emoji">📋</span>
+      <h3>Programador de Labores</h3>
+      <span class="tag">⭐ Multi-cultivo</span>
+      <p>Planifica, programa y da seguimiento a todas las labores agrícolas de tu finca.</p>
+      <ul class="features">
+        <li>Fincas → Lotes → Cultivos → Etapas → Labores</li>
+        <li>Calendario por día, semana o mes</li>
+        <li>Dashboard con eficiencia y productividad</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <span style="font-size:0.75rem;color:var(--text-muted-color);">Mateo T. · Alfredo G.</span>
+      <a href="{{ '/programador-labores' | relative_url }}">📖 Ver detalle →</a>
+    </div>
+  </div>
+
+  <!-- Monitoreo BrocaRoya -->
+  <div class="app-card">
+    <div class="card-body">
+      <span class="emoji">🌿</span>
+      <h3>Monitoreo Broca y Roya</h3>
+      <span class="tag">Café</span>
+      <p>Evalúa árbol por árbol la incidencia de broca y roya en tus cultivos de café.</p>
+      <ul class="features">
+        <li>Evaluación de 50 árboles por lote</li>
+        <li>Cálculo automático de % de infestación</li>
+        <li>Exportación a Excel, PDF y JSON</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <span style="font-size:0.75rem;color:var(--text-muted-color);">Mateo T.</span>
+      <a href="{{ '/monitoreo-brocaroya' | relative_url }}">📖 Ver detalle →</a>
+    </div>
+  </div>
+
+  <!-- CafExport -->
+  <div class="app-card">
+    <div class="card-body">
+      <span class="emoji">☕</span>
+      <h3>CafExport</h3>
+      <span class="tag">Comercialización</span>
+      <p>Gestión profesional de compras de café con margen P&L en tiempo real.</p>
+      <ul class="features">
+        <li>Registro de compras por cliente y tipo</li>
+        <li>Margen P&L: (Precio Nacional - Precio Compra) × Kg</li>
+        <li>Exportación a Excel y PDF</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <span style="font-size:0.75rem;color:var(--text-muted-color);">Mateo T.</span>
+      <a href="{{ '/cafexport' | relative_url }}">📖 Ver detalle →</a>
+    </div>
+  </div>
+
+</div>
+
+<h2 class="section-title">👥 Nuestro Equipo</h2>
+
+<div class="team-grid">
+  <div class="team-card">
+    <div class="avatar">👨‍💻</div>
+    <h4>Lucas Mateo Tabares Franco</h4>
+    <div class="role">Ingeniero Agrónomo & Desarrollador</div>
+    <div class="uni">🎓 Universidad de Caldas</div>
+    <p class="desc">Ingeniero Agrónomo con experiencia en desarrollo de software agrícola. Transformo procesos de campo en soluciones digitales offline-first. Detrás de cada línea de código hay conocimiento real del agro colombiano.</p>
+    <div class="social">
+      <a href="https://linkedin.com/in/lucas-mateo-tabares-franco-31797aa2">💼 LinkedIn</a>
+      <a href="https://github.com/iglm">🐙 GitHub</a>
+    </div>
+  </div>
+  <div class="team-card">
+    <div class="avatar">👨‍🌾</div>
+    <h4>Alfredo García Llano</h4>
+    <div class="role">Administrador de Empresas Agropecuarias</div>
+    <div class="uni">🎓 Universidad de Caldas</div>
+    <p class="desc">Administrador de Empresas Agropecuarias con visión estratégica del negocio agrícola. Asesoría profesional en gestión de fincas, planificación de cultivos, análisis de rentabilidad y comercialización de café.</p>
+    <div class="social">
+      <a href="mailto:mateotabares7@gmail.com?subject=Asesor%C3%ADa%20Agropecuaria">📊 Asesorías</a>
+    </div>
+  </div>
+</div>
+
+<div class="asesorias-iglm" id="asesorias">
+  <span class="icon">📊</span>
+  <h2>Asesoría Agropecuaria Profesional</h2>
+  <p>Soluciones digitales personalizadas para tu finca o negocio agropecuario. Aprovecha la tecnología para tomar mejores decisiones.</p>
+  <div class="services">
+    <div class="service-item"><h4>📈 Gestión de Fincas</h4><p>Diagnóstico, planificación y optimización de recursos.</p></div>
+    <div class="service-item"><h4>☕ Comercialización de Café</h4><p>Compra, venta, márgenes P&L y mercado cafetero.</p></div>
+    <div class="service-item"><h4>🌿 Sanidad Vegetal</h4><p>Monitoreo de broca, roya y plagas con metodología profesional.</p></div>
+    <div class="service-item"><h4>🌱 Planificación de Cultivos</h4><p>Programación de labores, rotación y calendarios agrícolas.</p></div>
+    <div class="service-item"><h4>📱 Adopción Tecnológica</h4><p>Capacitación en apps agrícolas para tu equipo de campo.</p></div>
+    <div class="service-item"><h4>💰 Análisis de Rentabilidad</h4><p>Costos, ingresos y proyecciones económicas.</p></div>
+  </div>
+  <a class="btn-asesoria" href="mailto:mateotabares7@gmail.com?subject=Asesor%C3%ADa%20Agropecuaria">📩 Solicitar Asesoría</a>
+</div>
+
+<div class="contact-iglm">
+  <h2>📲 ¿Interesado en nuestras apps o asesorías?</h2>
+  <p>Contáctanos para obtener las apps, agendar una asesoría o desarrollar una solución a la medida de tu finca o negocio.</p>
+  <div class="btn-group">
+    <a class="btn" href="mailto:mateotabares7@gmail.com">✉️ Escríbenos</a>
+    <a class="btn btn-outline" href="mailto:mateotabares7@gmail.com?subject=Asesor%C3%ADa%20Agropecuaria">📊 Quiero Asesoría</a>
+  </div>
+  <div class="links">
+    <a href="https://github.com/iglm">🐙 GitHub</a>
+    <a href="https://github.com/iglm/monitoreo-brocaroya">🌿 BrocaRoya</a>
+    <a href="https://github.com/iglm/programador-labores">📋 Prog. Labores</a>
+    <a href="https://github.com/iglm/cafexport">☕ CafExport</a>
+  </div>
+</div>
