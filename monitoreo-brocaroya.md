@@ -66,11 +66,6 @@ Aplicación Android nativa para la evaluación de incidencia de **broca** (*Hypo
     <small style="color:var(--text-muted-color);">Ingeniero Agrónomo & Desarrollador</small><br>
     <small style="color:var(--text-muted-color);">Universidad de Caldas</small>
   </div>
-  <div class="p-3 rounded" style="background:var(--card-bg);border:1px solid var(--border-color);flex:1;min-width:200px;">
-    <strong>👨‍🌾 Alfredo García Llano</strong><br>
-    <small style="color:var(--text-muted-color);">Administrador de Empresas Agropecuarias</small><br>
-    <small style="color:var(--text-muted-color);">Universidad de Caldas</small>
-  </div>
 </div>
 
 <div class="d-flex gap-2 mt-3">
