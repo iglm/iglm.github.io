@@ -32,11 +32,7 @@ Aplicación profesional para la **planificación, programación y seguimiento** 
     <strong>👨‍💻 Mateo Tabares</strong><br>
     <small style="color:var(--text-muted-color);">Ing. Agrónomo & Desarrollador</small>
   </div>
-  <div class="p-3 rounded" style="background:var(--card-bg);border:1px solid var(--border-color);flex:1;min-width:200px;">
-    <strong>👨‍🌾 Alfredo García Llano</strong><br>
-    <small style="color:var(--text-muted-color);">Admon. Empresas Agropecuarias</small>
-    <br><small style="color:var(--text-muted-color);">— Diseño conceptual del app</small>
-  </div>
+</div>
 </div>
 
 <div class="d-flex gap-2 mt-3">

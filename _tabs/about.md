@@ -33,25 +33,7 @@ Ingeniero Agrónomo de la Universidad de Caldas con experiencia en desarrollo de
 - Gestión de datos agrícolas offline-first
 - Supabase + Cloudflare stack
 
-### Alfredo García Llano
-
-<div class="d-flex gap-3 flex-wrap mt-3 mb-3">
-  <div class="p-3 rounded" style="background:var(--card-bg);border:1px solid var(--border-color);flex:1;min-width:250px;">
-    <strong>👨‍🌾 Administrador de Empresas Agropecuarias</strong><br>
-    <small>🎓 Universidad de Caldas</small>
-    <div class="mt-2">
-      <a href="mailto:mateotabares7@gmail.com?subject=Asesor%C3%ADa%20Agropecuaria">📊 Asesorías</a>
-    </div>
-  </div>
-</div>
-
-Administrador de Empresas Agropecuarias con visión estratégica del negocio agrícola. Ofrece asesoría profesional en gestión de fincas, planificación de cultivos, análisis de rentabilidad y comercialización de café.
-
-**Áreas de expertise:**
-- Administración de fincas agropecuarias
-- Planificación y programación de labores
-- Comercialización de café y análisis P&L
-- Gestión de cultivos multi-especie
+### Lucas Mateo Tabares Franco
 
 ## 📱 Apps desarrolladas
 

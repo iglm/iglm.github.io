@@ -13,7 +13,6 @@
 ## 👥 Equipo
 
 - **Lucas Mateo Tabares Franco** — Ing. Agrónomo & Desarrollador
-- **Alfredo García Llano** — Admon. Empresas Agropecuarias
 
 ## 🔗 Enlaces
 
