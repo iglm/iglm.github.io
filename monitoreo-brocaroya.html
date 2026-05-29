@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo BrocaRoya — IGLM Apps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #FDF6E3;
+            color: #3E2C1B;
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; }
+
+        header {
+            background: linear-gradient(135deg, #6D4C2A, #8D6E3F);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header .tag {
+            display: inline-block;
+            background: #D4A843;
+            color: #3E2C1B;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        header p { margin-top: 1rem; opacity: 0.9; font-size: 1.1rem; }
+
+        section { margin: 3rem 0; }
+        h2 {
+            color: #6D4C2A;
+            border-bottom: 3px solid #D4A843;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 4px solid #D4A843;
+        }
+        .feature-card h3 { color: #6D4C2A; margin-bottom: 0.5rem; }
+
+        .field-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+        .field-item {
+            background: white;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        }
+        .field-item strong { color: #6D4C2A; }
+
+        .stats-box {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .stat { text-align: center; }
+        .stat .number { font-size: 2rem; font-weight: bold; color: #6D4C2A; }
+        .stat .label { font-size: 0.85rem; color: #666; }
+
+        .cta-button {
+            display: inline-block;
+            background: #6D4C2A;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+            margin: 0.5rem;
+        }
+        .cta-button:hover { background: #8D6E3F; }
+        .cta-button.secondary {
+            background: #D4A843;
+            color: #3E2C1B;
+        }
+        .cta-button.secondary:hover { background: #C49A3A; }
+        .cta-group { text-align: center; margin: 2rem 0; }
+
+        .credits {
+            background: #3E2C1B;
+            color: #E8D5B7;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .credits h3 { color: #D4A843; margin-bottom: 0.5rem; }
+        .credits .team {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .credits .member { font-size: 0.95rem; }
+        .credits .member .role { font-size: 0.8rem; opacity: 0.7; }
+        .credits .member .uni { font-size: 0.8rem; opacity: 0.6; }
+
+        footer {
+            background: #2A1F14;
+            color: #A08060;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <span class="tag">📱 Android Nativo</span>
+            <h1>🌿 Monitoreo BrocaRoya</h1>
+            <p>App de campo para monitoreo de broca y roya en cultivos de café</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>¿Qué hace esta app?</h2>
+            <p>Monitoreo BrocaRoya es una herramienta de campo diseñada para que ingenieros agrónomos y caficultores registren evaluaciones fitosanitarias de broca del café (<em>Hypothenemus hampei</em>) y roya del café (<em>Hemileia vastatrix</em>) directamente desde su celular, árbol por árbol.</p>
+            <p style="margin-top:1rem;">La app está diseñada para trabajar <strong>offline</strong> — no necesitas internet en el lote. Los datos se guardan automáticamente en el dispositivo y al finalizar la evaluación se exporta un reporte Excel profesional.</p>
+        </section>
+
+        <section>
+            <h2>📋 Campos evaluados por árbol</h2>
+            <div class="field-grid">
+                <div class="field-item"><strong>NFA</strong> — Frutos en rama seleccionada</div>
+                <div class="field-item"><strong>FBA</strong> — Frutos brocados en rama</div>
+                <div class="field-item"><strong>NFS</strong> — Frutos en plato del árbol</div>
+                <div class="field-item"><strong>FBS</strong> — Frutos brocados en plato</div>
+                <div class="field-item"><strong>NH</strong> — Total de hojas en rama</div>
+                <div class="field-item"><strong>HR</strong> — Hojas con roya</div>
+                <div class="field-item"><strong>NHM</strong> — Hojas con minas</div>
+                <div class="field-item"><strong>MR</strong> — Mal rosado (0/1)</div>
+                <div class="field-item"><strong>AR</strong> — Arañita roja (0/1)</div>
+                <div class="field-item"><strong>GOT</strong> — Gotera (0/1)</div>
+                <div class="field-item"><strong>CHA</strong> — Chamusquina (0/1)</div>
+                <div class="field-item"><strong>ANT</strong> — Antracnosis (0/1)</div>
+                <div class="field-item"><strong>DEF</strong> — Deficiencia nutricional (0-4)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>✨ Funcionalidades clave</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>📱 Ingreso rápido</h3>
+                    <p>Campos grandes y accesibles para usar en el lote. Botón "Siguiente" para avanzar árbol por árbol.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Relleno estadístico</h3>
+                    <p>Si se evalúan menos de 50 árboles, la app completa los datos automáticamente con distribución normal basada en media y desviación estándar de los datos reales.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📑 Exporta Excel</h3>
+                    <p>Genera un archivo Excel con 3 hojas: Resumen (totales y porcentajes), Árboles (datos detallados) e Info (créditos).</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💾 Offline-first</h3>
+                    <p>Room database local. Si el celular se apaga, los datos no se pierden. Todo persiste hasta que exportes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🌙 Dark mode</h3>
+                    <p>Interfaz adaptable con tema oscuro automático para trabajar en condiciones de poca luz.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Reporte visual</h3>
+                    <p>Al finalizar la evaluación, muestra un resumen con barras de progreso de % infestación y botón para abrir el Excel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>📊 Ficha técnica</h2>
+            <div class="stats-box">
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="number">50</div>
+                        <div class="label">Árboles por lote</div>
+                    </div>
+                    <div class="stat">
+                        <div class="number">13</div>
+                        <div class="label">Campos por árbol</div>
+                    </div>
+                    <div class="stat">
+                        <div class="number">25MB</div>
+                        <div class="label">Tamaño APK</div>
+                    </div>
+                    <div class="stat">
+                        <div class="number">API 26+</div>
+                        <div class="label">Android mínimo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🛠 Stack técnico</h2>
+            <div class="stats-box">
+                <p><strong>Lenguaje:</strong> Kotlin 2.0.21</p>
+                <p><strong>UI:</strong> Jetpack Compose + Material 3</p>
+                <p><strong>Persistencia:</strong> Room (SQLite)</p>
+                <p><strong>DI:</strong> Hilt</p>
+                <p><strong>Export:</strong> Apache POI (Excel .xlsx)</p>
+                <p><strong>API mínima:</strong> Android 8.0 (API 26)</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>📲 Solicitar la app</h2>
+            <p style="text-align:center;margin-bottom:1rem;">¿Quieres esta app para tu finca o negocio? Contáctanos.</p>
+            <div class="cta-group">
+                <a href="https://wa.me/573502535431?text=Hola%2C%20quiero%20la%20app%20Monitoreo%20BrocaRoya" class="cta-button">📱 Solicitar App</a>
+                <a href="https://wa.me/573502535431?text=Hola%2C%20quiero%20una%20asesor%C3%ADa%20agropecuaria" class="cta-button secondary">🌱 Asesoría Agropecuaria</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="credits">
+        <h3>👨‍💻 Desarrollado por</h3>
+        <div class="team">
+            <div class="member">
+                <strong>Lucas Mateo Tabares Franco</strong>
+                <div class="role">Ingeniero Agrónomo &amp; Desarrollador</div>
+                <div class="uni">Universidad de Caldas</div>
+            </div>
+            <div class="member">
+                <strong>Alfredo García Llano</strong>
+                <div class="role">Administrador de Empresas Agropecuarias</div>
+                <div class="uni">Universidad de Caldas</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Lucas Mateo Tabares Franco &amp; Alfredo García Llano — IGLM Apps</p>
+        <p style="margin-top:0.5rem;font-size:0.8rem;">Transformando el campo colombiano con tecnología</p>
+    </footer>
+</body>
+</html>
