@@ -5,9 +5,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-**IGLM** es un equipo conformado por profesionales de la **Universidad de Caldas** que desarrolla aplicaciones móviles profesionales para transformar la gestión del campo colombiano.
+**IGLM** — Software y apps móviles nativas para la gestión del campo colombiano, creadas por un Ingeniero Agrónomo de la **Universidad de Caldas**.
 
-## 👥 Nuestro Equipo
+## 👤 Creador
 
 ### Lucas Mateo Tabares Franco
 
@@ -23,31 +23,28 @@ order: 4
   </div>
 </div>
 
-Ingeniero Agrónomo de la Universidad de Caldas con experiencia en desarrollo de software agrícola. Transformo procesos de campo en soluciones digitales que funcionan sin internet (offline-first). Detrás de cada línea de código hay conocimiento real del agro colombiano.
+Ingeniero Agrónomo con experiencia en desarrollo de software agrícola. Transformo procesos de campo en soluciones digitales que funcionan sin internet (offline-first). Detrás de cada línea de código hay conocimiento real del agro colombiano.
 
 **Áreas de expertise:**
 - Desarrollo Android nativo (Kotlin + Jetpack Compose)
-- Desarrollo multiplataforma (React + TypeScript + Capacitor)
 - Arquitectura Clean + MVVM + Room + Hilt
 - Monitoreo fitosanitario (broca, roya)
 - Gestión de datos agrícolas offline-first
-- Supabase + Cloudflare stack
-
-### Lucas Mateo Tabares Franco
+- Exportación profesional (Excel, PDF)
 
 ## 📱 Apps desarrolladas
 
 | App | Tecnología | Estado |
 |---|---|---|
-| 🌿 **Monitoreo Broca y Roya** | React + TS + Capacitor | Activa |
-| 📋 **Programador de Labores** | React + TS + Capacitor | Activa |
-| ☕ **CompraCafe** (antes CafExport) | Android nativo (Compose) | Activa |
+| 🌿 **Monitoreo Broca y Roya** | Kotlin + Compose (nativo) | Activa |
+| 📋 **Programador de Labores** | Kotlin + Compose (nativo) | Activa |
+| 🏍️ **Control de Gastos Moto** | Kotlin + Compose (nativo) | Activa |
 
 ## 🌱 Filosofía
 
-Creemos que la tecnología agrícola debe ser:
+Creo que la tecnología agrícola debe ser:
 - **Offline-first**: El campo colombiano no siempre tiene internet
-- **Simple**: Hecha por agrónomos, para agrónomos y agricultores
+- **Simple**: Hecha por un agrónomo, para agrónomos y agricultores
 - **Profesional**: Con estándares de calidad de software moderno
 - **Colombiana**: Entendemos nuestra realidad y nuestras necesidades
 

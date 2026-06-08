@@ -12,7 +12,8 @@ Aplicación Android nativa para la evaluación de incidencia de **broca** (*Hypo
 
 - ✅ Evaluación de hasta **50 árboles por lote** (finalización anticipada con relleno estadístico)
 - ✅ **13 campos por árbol**: NFA, FBA, NFS, FBS, NH, HR, NHM, MR, AR, GOT, CHA, ANT, DEF
-- ✅ **Relleno estadístico automático**: si se evalúan menos de 50 árboles, la app completa los datos restantes usando distribución normal (media + desviación estándar de los datos reales)
+- ✅ **Posición de broca**: POS-A (pericarpio), POS-B (endospermo), POS-C (semilla profunda), POS-D (emergió) — umbral agroquímico automático
+- ✅ **Relleno estadístico automático**
 - ✅ **Exportación a Excel** con 3 hojas: Resumen (totales y %), Árboles (datos detallados), Info (créditos)
 - ✅ **Pantalla de reporte** visual con barras de progreso de % infestación
 - ✅ **Offline-first** — Room database local. Si el celular se apaga, los datos no se pierden
