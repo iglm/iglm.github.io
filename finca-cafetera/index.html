@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finca Cafetera — Libro de la finca</title>
+<meta name="description" content="Finca Cafetera es la libreta digital del caficultor: fincas, lotes, labores, cosecha, calidad, ventas e inventario, con costo por arroba y punto de equilibrio.">
+<style>
+  :root { --verde:#166534; --verde-oscuro:#14532d; --fondo:#f7f7f2; --texto:#1f2937; --gris:#6b7280; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--fondo); color:var(--texto); line-height:1.6; }
+  header { background: linear-gradient(135deg, var(--verde) 0%, var(--verde-oscuro) 100%); color:#fff; padding:3rem 1.25rem 2.5rem; text-align:center; }
+  header h1 { margin:0 0 .5rem; font-size:2.2rem; }
+  header p { margin:0 auto; max-width:640px; opacity:.92; font-size:1.05rem; }
+  main { max-width:860px; margin:0 auto; padding:2rem 1.25rem 3rem; }
+  h2 { color:var(--verde); margin-top:2.2rem; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap:1rem; margin-top:1rem; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:1rem 1.1rem; }
+  .card h3 { margin:.2rem 0 .4rem; font-size:1rem; color:var(--verde-oscuro); }
+  .card p { margin:0; font-size:.92rem; color:var(--texto); }
+  .btn { display:inline-block; background:var(--verde); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-weight:600; margin-top:1.4rem; }
+  .btn:hover { background:var(--verde-oscuro); }
+  .centro { text-align:center; }
+  footer { border-top:1px solid #e5e7eb; padding:1.5rem 1.25rem 2.5rem; text-align:center; color:var(--gris); font-size:.9rem; }
+  footer a { color:var(--verde); }
+</style>
+</head>
+<body>
+<header>
+  <h1>☕ Finca Cafetera</h1>
+  <p>El libro de la finca, en el celular: la libreta digital para llevar las cuentas y los registros de la finca cafetera sin papel y sin enredos.</p>
+  <a class="btn" href="https://finca-bean-ledger.lovable.app">Abrir la aplicación</a>
+</header>
+<main>
+  <h2>¿Qué es?</h2>
+  <p><strong>Finca Cafetera — Libro de la finca</strong> es una aplicación pensada para el caficultor colombiano. Reemplaza la libreta de papel por un registro ordenado de todo lo que pasa en la finca, y convierte esos registros en números claros: cuánto cuesta producir una arroba de café y cuál es el punto de equilibrio de la cosecha.</p>
+
+  <h2>¿Para quién?</h2>
+  <p>Para caficultores que quieren saber, con datos y no de memoria, si la finca está ganando o perdiendo; y para técnicos y extensionistas que acompañan la gestión de las fincas de su región. Nació en Sevilla, Valle del Cauca, tierra de café.</p>
+
+  <h2>Funciones</h2>
+  <div class="grid">
+    <div class="card"><h3>📊 Resumen de la finca</h3><p>Costo por arroba y punto de equilibrio explicados en lenguaje sencillo, con el balance general del periodo.</p></div>
+    <div class="card"><h3>💰 Ingresos y egresos</h3><p>Registro de ventas y gastos de la finca, para saber en qué se va la plata.</p></div>
+    <div class="card"><h3>🧑‍🌾 Actividades y labores</h3><p>Control de las labores del cultivo: fertilización, control de broca y roya, deshierbas, podas y demás.</p></div>
+    <div class="card"><h3>🌱 Fincas y lotes</h3><p>Organización de la finca por lotes, con sus datos de área, variedad y estado.</p></div>
+    <div class="card"><h3>🧺 Recolección</h3><p>Planilla de recolección y liquidación de la cosecha por recolector.</p></div>
+    <div class="card"><h3>✅ Calidad y beneficio</h3><p>Registro del beneficio y la calidad del café, con factor de rendimiento.</p></div>
+    <div class="card"><h3>📦 Inventario</h3><p>Control de insumos y existencias de la finca.</p></div>
+    <div class="card"><h3>📱 Desde el celular</h3><p>Diseñada para usarse en el campo, con una cuenta personal o en modo invitado en el propio dispositivo.</p></div>
+  </div>
+
+  <h2>Estado del proyecto</h2>
+  <p>La aplicación está en desarrollo activo y en proceso de publicación en Google Play. Mientras tanto, puede usarse desde el enlace de arriba.</p>
+
+  <p class="centro"><a class="btn" href="https://finca-bean-ledger.lovable.app">Abrir la aplicación</a></p>
+</main>
+<footer>
+  <p>Finca Cafetera · Desarrollada por Lucas Mateo Tabares Franco — Ingeniero Agrónomo, extensionista de la Federación Nacional de Cafeteros · Sevilla, Valle del Cauca, Colombia</p>
+  <p><a href="/privacidad/">Política de Privacidad</a> · <a href="/terminos/">Términos de uso</a> · <a href="https://iglm.github.io/">IGLM — Software y Asesoría Agrícola</a></p>
+</footer>
+</body>
+</html>
